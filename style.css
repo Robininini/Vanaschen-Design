@@ -46,6 +46,7 @@ nav ul {
 
 nav li {
   display: inline;
+  padding: 30px;
 }
 
 nav a {
@@ -80,7 +81,9 @@ a.linkbutton:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 20px auto;
+  margin-left: 615px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 a.linkbutton:hover {
@@ -100,63 +103,89 @@ a.linkbutton:hover {
 
 .fusszeile img {
   width: 40px;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.fusszeile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fusszeile nav {
+  float: left;
+  margin: 0;
 }
 
 .fusszeile nav ul {
-  list-style: none;
   display: flex;
   gap: 20px;
 }
 
 /* ========== Inhalt ========== */
-h1, h3 {
-  margin: 30px 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.titel, .text {
+h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+}
+
+.unterfade {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.arnoldbild {
+  border: none;
+  margin-top: -20px;
+  padding: 2em;
+  float: left;
+}
+
+.titel {
+  margin-top: 100px;
   text-align: center;
 }
 
-/* ===== Bilder mit Positionierung auf Desktop ===== */
-.arnoldbild {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  padding: 1em;
-  float: left;
+.text {
+  text-align: center;
+  line-height: normal;
 }
 
 .logo {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  padding: 1em;
+  margin-top: 40px;
+  margin-left: 40px;
+  border: none;
+  padding: 5em;
   float: left;
 }
 
+.text-van {
+  margin-top: 300px;
+}
+
+.uber_div {
+  margin-top: 400px;
+  background: #cccccc;
+  padding: 2em;
+}
+
 .robyn {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  padding: 1em;
+  margin-top: 400px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  padding: 5em;
   float: right;
 }
 
-/* ==== Layout-Bereiche ==== */
-.uber_div {
-  background: #cccccc;
-  padding: 2em;
-  margin-top: 50px;
-}
-
-.text-van,
-.robyn,
 .ich {
-  margin: 30px 0;
+  margin-top: 800px;
+  margin-bottom: 800px;
 }
 
 .mailto {
@@ -169,6 +198,7 @@ h1, h3 {
   padding: 14px 25px;
   text-decoration: none;
   display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: large;
 }
 
@@ -192,7 +222,7 @@ h1, h3 {
 /* ========== Responsive Design ========== */
 
 /* Tablets */
-@media (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   body {
     font-size: 16px;
     background-color: #dfe6e9;
@@ -200,6 +230,7 @@ h1, h3 {
 
   .container {
     padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     max-width: 90%;
   }
 }
@@ -235,16 +266,18 @@ h1, h3 {
     box-shadow: none;
   }
 
-  /* Bilder im Smartphone-Modus nebeneinander vermeiden */
   .logo,
   .arnoldbild,
   .robyn {
-    padding: 0.5em;
-    margin: 10px auto;
-    float: none;
+    float: none !important;
+    margin: 10px auto !important;
+    padding: 0.5em !important;
+    max-width: 90%;
+    height: auto !important;
+    display: block !important;
   }
 
-  .linkbutton {
+  a.linkbutton {
     margin: 20px auto;
     display: block;
   }
@@ -262,5 +295,34 @@ h1, h3 {
     height: auto;
     padding: 20px;
     gap: 10px;
+  }
+}
+
+/* Sehr kleine Bildschirme (max. 480px) */
+@media (max-width: 480px) {
+  body {
+    background-color: #e5e5e5;
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+  }
+}
+
+/* Anpassungen für verschiedene Bildschirmorientierungen */
+/* Hochformat (Portrait) */
+@media (orientation: portrait) {
+  body {
+    background-color: #e5e5e5;
+  }
+}
+
+/* Querformat (Landscape) */
+@media (orientation: landscape) {
+  body {
+    background-color: #e5e5e5;
   }
 }
