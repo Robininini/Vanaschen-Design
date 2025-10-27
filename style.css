@@ -1,0 +1,543 @@
+/* ========== Global Reset & Grundstil ========== */
+* {
+  margin: 10 px;
+  padding: 10 px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif,;
+}
+
+body {
+  background-color: #ecf0f1;
+  font-size: 18px;
+}
+
+/* Bilder */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== Navbar ========== */
+.navbar-inner {
+  display: flex;
+  justify-content: space-between; /* Logo links, nav rechts */
+  align-items: flex-start;        /* ⬅️ alles am oberen Rand ausrichten */
+}
+
+
+/* Das Logo links, Navigation rechts */
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end; /* ⬅️ Navigation nach rechts */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: -85px;
+}
+
+
+.navbar img.logo {
+  width: 10px !important; /* !important erzwingt die Größe */
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+nav li {
+  display: inline;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #353535;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: #00b2b2;
+}
+
+nav a:active {
+  font-weight: medium;
+}
+
+/* ========== Container ========== */
+.container {
+  padding: 40px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+a.linkbutton:link,
+a.linkbutton:visited {
+  background-color: #7f7979;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  /* Zentrierung */
+  margin: 10px auto 50px; /* oben:10px, rechts+links:auto, unten:50px */
+  display: block;          /* nötig, damit auto-Margen greifen */
+  width: fit-content;      /* passt sich der Button-Breite an */
+}
+
+
+a.linkbutton:hover {
+  color: black;
+}
+
+/* ========== Footer ========== */
+.fusszeile {
+  display: flex;
+  justify-content: flex-start; /* linksbündig */
+  align-items: center;
+  background-color: #e5e5e5;
+  color: #353535;
+  height: 60px;
+  padding: 0 30px;
+}
+
+.footer-nav {
+  display: flex;             /* eigene Flexbox */
+  justify-content: flex-start; /* Links */
+}
+
+.footer-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #353535;
+}
+
+.footer-nav a:hover {
+  color: #00b2b2;
+}
+
+
+
+/* ========== Inhalt ========== */
+h1 {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20 px;
+  font-weight: normal;
+}
+
+
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+   font-weight: normal;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+   font-weight: normal;
+}
+
+h5 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+   font-weight: normal;
+   }
+
+h6 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+   font-weight: bold;
+}
+
+/* 👇 Einheitlicher Abstand nach Navbar */
+.unterfade {
+  margin-top: 10px; 
+  margin-bottom: 20px;
+}
+
+.arnoldbild {
+  border: none;
+  margin: 20px auto 40px auto; /* Einheitlich mit Text */
+  padding: 2em;
+  float: left;
+}
+
+.titel {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.text {
+  text-align: justify;   /* macht Blocksatz */
+  line-height: 1.6;      /* angenehmer Zeilenabstand (statt "normal") */
+  margin: 80px;          /* Außenabstand zu den Rändern */
+  padding: 0px;         /* Innenabstand im Element */
+}
+
+
+.logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  border: none;
+  padding: 5em;
+  float: left;
+}
+
+.text-van {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.uber_div {
+  margin-top: 80px;
+  background: #cccccc;
+  padding: 2em;
+}
+
+.robyn {
+  margin-top: 80px;
+  margin-left: 50px;
+  margin-bottom: 60px;
+  padding: 5em;
+  float: right;
+}
+
+.ich {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.mailto {
+  font-family: "Montserrat", sans-serif;
+}
+
+.defaulthover {
+  background-color: gray;
+  color: white;
+  padding: 14px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+.defaulthover:hover {
+  color: black;
+}
+
+.lighthover {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lighthover:hover {
+  opacity: 0.5;
+}
+
+.cur {
+  cursor: url("../assets/cursor_1.cur") 30 2, auto;
+}
+
+/* ========== Responsive Design ========== */
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 16px;
+    background-color: #dfe6e9;
+  }
+
+  .container {
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+    background-color: #00b2b2;
+    margin: 0;
+  }
+
+  .navbar {
+    background-color: #e5e5e5;
+    padding: 10px;
+    margin-bottom: 20px; /* Einheitlich auch mobil */
+  }
+
+  .navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .navbar img.logo {
+    width: 40px;
+    height: auto;
+  }
+
+  nav {
+    flex-grow: 1;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  nav li {
+    padding: 0;
+  }
+
+  nav a {
+    display: inline-block;
+    color: #353535;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+
+  .container {
+    padding: 20px;
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  .arnoldbild,
+  .robyn {
+    float: none !important;
+    margin: 15px auto !important;
+    padding: 0.5em !important;
+    max-width: 90%;
+    height: auto !important;
+    display: block !important;
+  }
+
+  a.linkbutton {
+    margin: 20px auto 40px auto !important;
+    display: block;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .uber_div,
+  .text-van,
+  .ich {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .fusszeile {
+    flex-direction: row;
+    text-align: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    height: auto;
+  }
+
+  .fusszeile ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+/* Sehr kleine Bildschirme (max. 480px) */
+@media (max-width: 480px) {
+  body {
+    background-color: #e5e5e5;
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+  }
+}
+
+/* Hochformat */
+@media (orientation: portrait) {
+  body {
+    background-color: #e5e5e5;
+  }
+}
+
+/* Querformat */
+@media (orientation: landscape) {
+  body {
+    background-color: #e5e5e5;
+  }
+}
+
+/* Platzhalter */
+.spacer-small { height: 10%;  /* Höhe der Lücke */
+  width: 100%;   /* volle Breite */}
+.spacer-medium { height: 20%; width: 100%;   /* volle Breite */ }
+.spacer-large { height: 50%; width: 100%;   /* volle Breite */ }
+
+/* Container für Bild und Text nebeneinander */
+/* Container für Bild und Text nebeneinander */
+.arnold-container {
+  display: flex;
+  align-items: flex-start; /* Bild und Text beginnen oben */
+  gap: 30px;               /* Abstand zwischen Bild und Text */
+}
+
+/* Bild */
+.arnoldbild {
+  max-width: 600px; /* Bildgröße anpassen */
+  height: auto;
+  display: block;
+  margin: -40px;         /* kein zusätzlicher Abstand */
+  margin-left: 20px; /* extra Abstand vom linken Rand, optional */
+}
+
+/* Textblock */
+.arnold-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Überschriften und Paragraphen oben bündig */
+.arnold-text h2,
+.arnold-text h4,
+.arnold-text h5,
+.arnold-text p {
+  margin-top: 0;     /* kein unerwünschter Abstand nach oben */
+  margin-bottom: 10px; /* Abstand nach unten */
+  line-height: 1.3;  /* Text kompakt */
+  padding: 0;
+}
+
+/* Spacer */
+.spacer-small {
+  height: 20px;
+  width: 100%;
+}
+
+/* Optional: Button */
+.mailtobestellen a {
+  display: inline-block;
+  background-color: #7f7979;
+  color: white;
+  text-decoration: none;
+  padding: 14px 25px;
+  margin-top: 10px;
+}
+
+
+/* Preisblock */
+.price {
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888; /* grau, weniger Fokus */
+  margin-right: 5px;
+}
+
+.discount {
+  color: red;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.current-price {
+  font-weight: bold;
+  color: black;
+}
+
+.arnold-unterpfad  {
+  margin-left: 60px;
+}
+
+/* ================= Vanaschen Container ================= */
+.vanschaschen-container {
+    display: flex;
+    align-items: center; /* Text auf Höhe des Logos */
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.vanschaschen-container img.logo {
+    width: 600px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.text-vanaschen {
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+
+/* ================= Robyn Container ================= */
+.robyn-container {
+    display: flex;
+    align-items: center; /* zentriert Text vertikal zur Bildmitte */
+    gap: 30px;
+    padding: 20px 40px;
+}
+
+/* Bild links */
+.robyn-container img.robyn {
+    width: 600px; /* feste Breite für gleichmäßige Höhe */
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 5px; /* optional */
+}
+
+/* Text rechts */
+.robyn-text {
+    max-width: 600px;
+    line-height: 1.5;
+}
