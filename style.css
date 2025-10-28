@@ -1,0 +1,393 @@
+/* ========== Global Reset & Grundstil ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ecf0f1;
+  font-size: 18px;
+}
+
+/* Bilder */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== Navbar ========== */
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: -85px;
+}
+
+.navbar img.logo {
+  width: 100px;
+  height: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #353535;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: #00b2b2;
+}
+
+/* ========== Container ========== */
+.container {
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* ========== Buttons ========== */
+a.linkbutton:link,
+a.linkbutton:visited {
+  background-color: #7f7979;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px auto 50px;
+  display: block;
+  width: fit-content;
+}
+
+a.linkbutton:hover {
+  color: black;
+}
+
+/* Optionaler Button innerhalb von Containern */
+.mailtobestellen a {
+  display: inline-block;
+  background-color: #7f7979;
+  color: white;
+  text-decoration: none;
+  padding: 14px 25px;
+  margin-top: 10px;
+}
+
+.mailtobestellen a:hover {
+  color: black;
+}
+
+.mailto a {
+  display: inline-block;
+  background-color: #7f7979;
+  color: white;
+  text-decoration: none;
+  padding: 14px 25px;
+  margin-top: 10px;
+}
+
+.mailto a:hover {
+  color: black;
+}
+
+/* Preisblock */
+.price {
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 5px;
+}
+
+.discount {
+  color: red;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.current-price {
+  font-weight: bold;
+  color: black;
+}
+
+/* ========== Footer ========== */
+.fusszeile {
+  display: flex;
+  justify-content: flex-start; /* immer linksbündig */
+  align-items: center;
+  background-color: #e5e5e5;
+  color: #353535;
+  height: 60px;
+  padding: 0 30px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #353535;
+}
+
+.footer-nav a:hover {
+  color: #00b2b2;
+}
+
+/* ========== Inhalt ========== */
+h1, h3, h4, h5, h6 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode'
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+h1 { font-size: 20px; font-weight:lighter ; }
+h3 { font-size: 16px; font-weight:lighter }
+h4 { font-size: 14px; font-weight:lighter }
+h5 { font-size: 12px; font-weight:lighter }
+h6 { font-size: 16px; font-weight: bold; }
+
+/* ================= index ================= */
+
+.titel_index {
+   margin: 40px;
+}
+
+/* ================= impressum ================= */
+.title_impressum {
+   margin: 40px;
+}
+
+.text_impressum {
+   margin: 40px;
+}
+
+/* ================= widerrufsrecht ================= */
+.text_widerufsrecht {
+   margin: 40px;
+}
+
+/* =================datenschutz ================= */
+.text_datenschutz {
+   margin: 40px;
+}
+
+/* =================kollektion ================= */
+.text_kollektion {
+   margin: 40px;
+}
+
+/* =================Arnold ================= */
+.arnold-unterpfad {
+   margin: 20px;
+}
+
+.text {
+  text-align: justify;
+  line-height: 1.6;
+  margin: 40px;
+}
+
+.spacer-small { height: 20px; width: 100%; }
+.spacer-medium { height: 100px; width: 100%; }
+.spacer-high { height: 200px; width: 100%; }
+
+/* ================= Arnold Container ================= */
+.arnold-container {
+  text-align: justify;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.arnoldbild {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin-left: 20px;
+}
+
+.arnold-text {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+/* ================= Vanaschen Container ================= */
+.vanschaschen-container {
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.vanschaschen-container img.logo {
+  width: 400px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.text-vanaschen {
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+/* ================= Robyn Container ================= */
+.robyn-container {
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 40px;
+}
+
+.robyn-container img.robyn {
+  width: 600px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+
+.robyn-text {
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* ================= Kontakt ================= */
+
+.text_kontakt {
+  margin: 40px;
+}
+
+
+
+
+/* ========== Responsive Design ========== */
+
+/* Smartphones */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+    background-color: #f7f7f7;
+  }
+
+  /* Navbar */
+  .navbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar img.logo {
+    width: 60px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 0;
+  }
+
+  /* Container */
+  .container {
+    padding: 10px;
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  /* 🔽 Layout-Änderung: Bilder über Text 🔽 */
+  .arnold-container,
+  .vanschaschen-container,
+  .robyn-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .arnoldbild,
+  .vanschaschen-container img.logo,
+  .robyn-container img.robyn {
+    margin: 0 auto 20px auto;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .arnold-text,
+  .text-vanaschen,
+  .robyn-text {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  /* Buttons mittig zentriert */
+  a.linkbutton,
+  .mailtobestellen a {
+    margin: 20px auto;
+    display: block;
+    width: fit-content;
+    text-align: center;
+  }
+
+  /* Fußzeile bleibt links */
+  .fusszeile {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    gap: 10px;
+    height: auto;
+  }
+
+  .footer-nav ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+/* Sehr kleine Bildschirme */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .arnoldbild,
+  .vanschaschen-container img.logo,
+  .robyn-container img.robyn {
+    max-width: 300px;
+  }
+}
